@@ -1,0 +1,15 @@
+
+   
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot Controle Financeiro",
+      "request": "launch",
+      "mainClass": "com.example.controlefinanceiro.ControlefinanceiroApplication",
+      "projectName": "controlefinanceiro",
+      "envFile": "${workspaceFolder}/controlefinanceiro/.env"
+    }
+  ]
+}
