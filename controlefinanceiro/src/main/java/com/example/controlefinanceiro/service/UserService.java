@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.UUID;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.example.controlefinanceiro.dto.request.UserAtualizacaoRequest;
@@ -13,7 +14,7 @@ import com.example.controlefinanceiro.exception.UserNotFoundException;
 import com.example.controlefinanceiro.model.User;
 import com.example.controlefinanceiro.repository.UserRepository;
 
-
+@Service
 public class UserService {
 
     private final UserRepository userRepository;

@@ -2,6 +2,7 @@ package com.example.controlefinanceiro.model;
 
 import java.util.UUID;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -28,8 +29,10 @@ public class User {
 
     private String name;
 
+    @Column (nullable = false, unique = true)
     private String email;
 
+    @ToString.Exclude
     private String password;
 
 
